@@ -1,0 +1,15 @@
+Install necessary dependencies using npm:  npm install express request nodemon
+
+Steps 1 and 2:
+
+- Set up a basic server to function as a load balancer on port 5000.
+- Establish backend servers that will operate on ports 3000, 3001, 3002 and 3003.
+- Develop middleware to forward requests using a tunnel pipe and create a ServerIndex.
+- Implement the Round Robin algorithm to identify and maintain a list of active servers.
+
+
+Step 3:
+
+- Conduct health checks at 5-second intervals.
+- Update backend servers to include a health check API at /live.
+- Send a request to the health check API every 5 seconds.
